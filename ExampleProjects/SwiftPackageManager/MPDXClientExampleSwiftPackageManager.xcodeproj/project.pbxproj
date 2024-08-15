@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		452D46E52A6819170045A50A /* MPDXiOSLib in Frameworks */ = {isa = PBXBuildFile; productRef = 452D46E42A6819170045A50A /* MPDXiOSLib */; };
+		450796602C6E952D00EFAE00 /* MPDXiOSLib in Frameworks */ = {isa = PBXBuildFile; productRef = 4507965F2C6E952D00EFAE00 /* MPDXiOSLib */; };
 		4575B0A62A6817D500A11377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4575B0A52A6817D500A11377 /* Assets.xcassets */; };
 		4575B0AA2A6817D500A11377 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4575B0A92A6817D500A11377 /* Preview Assets.xcassets */; };
 		45A5B4932A68584E00B57EEE /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A5B48C2A68584E00B57EEE /* AppConfig.swift */; };
@@ -38,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				452D46E52A6819170045A50A /* MPDXiOSLib in Frameworks */,
+				450796602C6E952D00EFAE00 /* MPDXiOSLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +108,7 @@
 			);
 			name = MPDXClientExampleSwiftPackageManager;
 			packageProductDependencies = (
-				452D46E42A6819170045A50A /* MPDXiOSLib */,
+				4507965F2C6E952D00EFAE00 /* MPDXiOSLib */,
 			);
 			productName = MPDXClientExampleSwiftPackageManager;
 			productReference = 4575B09E2A6817D400A11377 /* MPDXClientExampleSwiftPackageManager.app */;
@@ -147,7 +147,7 @@
 			);
 			mainGroup = 4575B0952A6817D400A11377;
 			packageReferences = (
-				452D46E32A6819170045A50A /* XCRemoteSwiftPackageReference "mpdx-ios-lib" */,
+				4507965E2C6E952C00EFAE00 /* XCRemoteSwiftPackageReference "mpdx-ios" */,
 			);
 			productRefGroup = 4575B09F2A6817D400A11377 /* Products */;
 			projectDirPath = "";
@@ -429,20 +429,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		452D46E32A6819170045A50A /* XCRemoteSwiftPackageReference "mpdx-ios-lib" */ = {
+		4507965E2C6E952C00EFAE00 /* XCRemoteSwiftPackageReference "mpdx-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/CruGlobal/mpdx-ios-lib.git";
+			repositoryURL = "https://github.com/CruGlobal/mpdx-ios.git";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 0.6.7;
+				minimumVersion = 2.11.18;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		452D46E42A6819170045A50A /* MPDXiOSLib */ = {
+		4507965F2C6E952D00EFAE00 /* MPDXiOSLib */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 452D46E32A6819170045A50A /* XCRemoteSwiftPackageReference "mpdx-ios-lib" */;
+			package = 4507965E2C6E952C00EFAE00 /* XCRemoteSwiftPackageReference "mpdx-ios" */;
 			productName = MPDXiOSLib;
 		};
 /* End XCSwiftPackageProductDependency section */

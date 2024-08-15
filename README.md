@@ -1,7 +1,7 @@
 MPDX Client Example App
 =======================
 
-Includes Swift Package Manager and Cocoapods example projects to facilitate in the creation of your templated MPDX iOS App.
+Includes a Swift Package Manager example project to facilitate in the creation of your templated MPDX iOS App.
 
 - [Steps To Create Templated MPDX iOS App](#steps-to-create-templated-mpdx-ios-app)
 - [Configuring AppConfig](#configuring-appconfig)
@@ -11,7 +11,7 @@ Includes Swift Package Manager and Cocoapods example projects to facilitate in t
 
 - Xcode Version: 14.2 <br>
 - Minimum iOS Target: iOS 14 <br>
-- Dependency Manager: Swift Package Manager or Cocoapods <br>
+- Dependency Manager: Swift Package Manager <br>
 - MPDXiOSLib: View version [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/master/MPDXiOSLib.podspec#L4) or [here](https://github.com/CruGlobal/mpdx-ios-lib/tags). <br>
 
 ### Steps To Create Templated MPDX iOS App
@@ -32,41 +32,30 @@ Start by creating a new Xcode project. Make sure to choose the following when cr
 
 ### Install The MPDXiOSLib Dependency
 
-Choose 1 of the next 2 steps to install the MPDXiOSLib dependency.
+MPDXiOSLib can be installed using Swift Package Manager.
 
-NOTE: You can view the latest MPDXiOSLib version either [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/master/MPDXiOSLib.podspec#L4) or [here](https://github.com/CruGlobal/mpdx-ios-lib/tags).
+NOTE: You can view the latest MPDXiOSLib version [here](https://github.com/CruGlobal/mpdx-ios/tags).
 
 - [Install MPDXiOSLib With Swift Package Manager](#install-mpdxioslib-with-swift-package-manager)
-- [Install MPDXiOSLib With Cocoapods](#install-mpdxioslib-with-cocoapods)
 
 ### Install MPDXiOSLib With Swift Package Manager
 
 - Swift Package Manager Documentation is [here](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app).
 - Locate your Xcode project package dependencies and tap the add icon to add the MPDXiOSLib git repo.
   ![alt text](ReadMeAssets/swift-package-manager/xcode-locate-package-dependencies.png) <br><br>
-- Enter the repo https://github.com/CruGlobal/mpdx-ios-lib.git in the search field.  
+- Enter the repo https://github.com/CruGlobal/mpdx-ios.git in the search field.  
 - Set Dependency Rule to Up to Next Minor Version.
-- Set the minimum version. You can view the latest MPDXiOSLib version [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/master/MPDXiOSLib.podspec#L4) or [here](https://github.com/CruGlobal/mpdx-ios-lib/tags).
+- Set the minimum version. You can view the latest MPDXiOSLib version [here](https://github.com/CruGlobal/mpdx-ios/tags).
 - Add the Package. 
   ![alt text](ReadMeAssets/swift-package-manager/xcode-input-swift-package-mpdx-ios-lib.png) <br><br>
 - Xcode will finish loading, then add package to target.
   ![alt text](ReadMeAssets/swift-package-manager/xcode-add-swift-package-mpdx-ios-lib.png) <br><br>
-
-
-### Install MPDXiOSLib With Cocoapods
-
-- First install the [cocoapods dependency manager](https://cocoapods.org/).
-- Add a Podfile to your project directory.  You can review the MPDXClientExampleCocoapods Podfile for reference on setting that up [here](https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/ExampleProjects/Cocoapods/Podfile).  NOTE that your target name or names(if including tests) will be different than the MPDXClientExampleCocoapods target name.  The main target name will match the Xcode project name.
-- Also note the version might be later than the linked example.  Find the latest available version [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/master/MPDXiOSLib.podspec#L4) or [here](https://github.com/CruGlobal/mpdx-ios-lib/tags).
-- Open the Terminal app to your Xcode project directory and run command pod install.  Once completed you will have a .xcworkspace file which you can now open to configure in the next step.
-
     
 ### Configure Your New Xcode Project
 
 - Now it's time to finish configuring your Xcode project. 
 - The Xcode file to open will depend on the dependency manager used. <br>  
-  - For Swift Package Manager open the .xcodeproj file. <br>
-  - For Cocoapods open the .xcworkspace file (generated from pod install). <br>
+  - Open the .xcodeproj file. <br>
 - Configure your Xcode project build target.
   - Delete Mac under Supported Destinations.  Should be iPhone and iPad.
   - Set Minimum Deployments to iOS 14.0.
@@ -103,7 +92,7 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
   - Set your apiBaseUrl: String.
   - Set your authenticationConfiguration: AuthenticationConfiguration.
 - IMPORTANT: Add usage descriptions. These are descriptions apple looks for when a user attempts to access their device contacts or device face id from the MPDX app.  Without these the app will crash. Since these files can't be bundled with  MPDXiOSLib, they must be manually added to your Xcode project.
-  - To manually add them first download the latest MPDXiOSLib zip [here](https://github.com/CruGlobal/mpdx-ios-lib/archive/refs/heads/master.zip).
+  - To manually add them first download the latest MPDXiOSLib zip [here](https://github.com/CruGlobal/mpdx-ios/archive/refs/heads/master.zip).
   - In finder look in the downloaded directory for /Sources/MPDXiOSLib/Resources/UsageDescriptions/ and copy the UsageDescriptions directory into your project directory where Assets.xcassets, Info.plist, and .entitlements live. Make sure you're in finder and not the Xcode project.
     ![alt text](ReadMeAssets/configure-xcode-project/xcode-usage-descriptions-directory.png) <br><br>
   - Back in Xcode right click your project directory and choose Add Files and choose the Usage Descriptions directory you just added. Ensure Create groups is checked.
@@ -115,7 +104,7 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
 
 ### App Localization
 
-Localizable.strings files are bundled in MPDXiOSLib and by default your templated MPDX App will support the following languages found [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/develop/fastlane/.env.default#L3).
+Localizable.strings files are bundled in MPDXiOSLib and by default your templated MPDX App will support the following languages found [here](https://github.com/CruGlobal/mpdx-ios/blob/develop/fastlane/.env.default#L3).
 
 
 ### Configuring AppConfig

@@ -1,5 +1,0 @@
-/* Contacts Access Usage Description */
-"NSContactsUsageDescription" = "سيسمح هذا باستيراد جهات الاتصال المحددة إلى MPDX.";
-
-/* Face ID Usage Description */
-"NSFaceIDUsageDescription" = "يستخدم MPDX FaceID لفتح حسابك بأمان.";
