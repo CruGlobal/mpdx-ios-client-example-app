@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: macos-14
+    runs-on: macos-15
     env:
       FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT: 60
     
@@ -27,7 +27,7 @@ jobs:
       - name: Select Xcode Version
         uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: '15.4'
+          xcode-version: '16.0.0'
 
       - name: MPDXiOSLib SSH Key
         uses: webfactory/ssh-agent@v0.8.0
