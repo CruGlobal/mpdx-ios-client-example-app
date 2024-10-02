@@ -34,8 +34,10 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.MPDX_IOS_LIB_SSH_PRIVATE_KEY }}
 
-      - name: Bundle Install
-        run: bundle install
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
 
       - name: Import App Store Connect API Key
         env:
