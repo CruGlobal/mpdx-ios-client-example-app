@@ -434,7 +434,7 @@
 			repositoryURL = "https://github.com/CruGlobal/mpdx-ios-lib.git";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 0.6.7;
+				minimumVersion = 0.6.9;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
