@@ -119,6 +119,15 @@
       }
     },
     {
+      "identity" : "localization-services-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CruGlobal/localization-services-ios.git",
+      "state" : {
+        "revision" : "15726defb0a94ba38bc78d0313cac7bd4a5a3bab",
+        "version" : "0.1.0"
+      }
+    },
+    {
       "identity" : "mpa-horatio",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/CruGlobal/MPA-Horatio.git",
@@ -132,8 +141,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/CruGlobal/mpdx-ios-lib.git",
       "state" : {
-        "revision" : "ad8690b21d156bdfc2f93d845310295a7dc7b734",
-        "version" : "0.6.7"
+        "revision" : "49794dd24142d33b07237423a51922c98cd5453d",
+        "version" : "0.6.9"
       }
     },
     {
