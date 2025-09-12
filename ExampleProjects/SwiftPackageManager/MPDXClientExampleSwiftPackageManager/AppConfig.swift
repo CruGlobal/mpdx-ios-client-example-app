@@ -8,6 +8,7 @@
 
 import Foundation
 import MPDXiOSLib
+import RequestOperation
 
 class AppConfig: AppConfigInterface {
     
@@ -15,20 +16,18 @@ class AppConfig: AppConfigInterface {
         
     }
     
-    var apiBaseUrl: String {
-        return "set-your-api-base-url"
+    var apiBaseUrl: ApiBaseUrl {
+        return ApiBaseUrl(scheme: .https, host: "set-your-host-here")
     }
     
     var authenticationConfiguration: AuthenticationConfiguration {
-             
         return AuthenticationConfiguration(
-            authentication: MPDXOktaAuthentication<NoDecodableOktaUserData>(
+            accessTokenProvider: OktaAccessTokenProvider<NoDecodableOktaUserData>(
                 clientId: "set-your-okta-client-id",
                 logoutRedirectUri: "set-your-okta-logout-redirect-uri",
                 issuer: "set-your-okta-issuer",
                 redirectUri: "set-your-okta-redirect-uri"
-            ),
-            mpdxApiAuthenticationProvider: .okta
+            )
         )
     }
     

@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45295D072E7444100020D8B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4555DC032A68377300548C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4575B09E2A6817D400A11377 /* MPDXClientExampleSwiftPackageManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPDXClientExampleSwiftPackageManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4575B0A52A6817D500A11377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -28,7 +29,6 @@
 		45A5B4A72A68658A00B57EEE /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		45A5B4A82A68658A00B57EEE /* fr-FR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-FR"; path = "fr-FR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		45A5B4A92A68658A00B57EEE /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		45A5B4AA2A68658A00B57EEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45A5B4AB2A68658A00B57EEE /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45A5B4AC2A68658A00B57EEE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,7 +136,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 				de,
 				ar,
 				"es-419",
@@ -192,9 +191,9 @@
 				45A5B4A72A68658A00B57EEE /* es-419 */,
 				45A5B4A82A68658A00B57EEE /* fr-FR */,
 				45A5B4A92A68658A00B57EEE /* ko */,
-				45A5B4AA2A68658A00B57EEE /* Base */,
 				45A5B4AB2A68658A00B57EEE /* tr */,
 				45A5B4AC2A68658A00B57EEE /* ru */,
+				45295D072E7444100020D8B4 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -434,7 +433,7 @@
 			repositoryURL = "https://github.com/CruGlobal/mpdx-ios-lib.git";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 0.6.9;
+				minimumVersion = 0.10.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
