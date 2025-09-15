@@ -1,7 +1,7 @@
 MPDX Client Example App
 =======================
 
-Includes Swift Package Manager and Cocoapods example projects to facilitate in the creation of your templated MPDX iOS App. Note that these instructions were originally created in Xcode 14.2 and things may change in future versions of Xcode in which these instructions may need to be updated.
+Includes a Swift Package Manager example project to facilitate in the creation of your templated MPDX iOS App. Note that these instructions were originally created in Xcode 14.2 and things may change in future versions of Xcode.
 
 - [Steps To Create Templated MPDX iOS App](#steps-to-create-templated-mpdx-ios-app)
 - [Configuring AppConfig](#configuring-appconfig)
@@ -10,8 +10,8 @@ Includes Swift Package Manager and Cocoapods example projects to facilitate in t
 ### Requirements
 
 - Minimum iOS Target: iOS 14 <br>
-- Dependency Manager: Swift Package Manager or Cocoapods <br>
-- MPDXiOSLib: View version [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/master/MPDXiOSLib.podspec#L4) or [here](https://github.com/CruGlobal/mpdx-ios-lib/tags). <br>
+- Dependency Manager: Swift Package Manager <br>
+- MPDXiOSLib: View version [here](https://github.com/CruGlobal/mpdx-ios-lib/tags). <br>
 
 ### Steps To Create Templated MPDX iOS App
 
@@ -29,15 +29,6 @@ Start by creating a new Xcode project. Make sure to choose the following when cr
 - Ensure Use Core Data is not checked.
 - If you wish to include your own tests then check include Tests otherwise you can leave this unchecked.
 
-### Install The MPDXiOSLib Dependency
-
-Choose 1 of the next 2 steps to install the MPDXiOSLib dependency.
-
-NOTE: You can view the latest MPDXiOSLib version either [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/master/MPDXiOSLib.podspec#L4) or [here](https://github.com/CruGlobal/mpdx-ios-lib/tags).
-
-- [Install MPDXiOSLib With Swift Package Manager](#install-mpdxioslib-with-swift-package-manager)
-- [Install MPDXiOSLib With Cocoapods](#install-mpdxioslib-with-cocoapods)
-
 ### Install MPDXiOSLib With Swift Package Manager
 
 - Swift Package Manager Documentation is [here](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app).
@@ -50,22 +41,11 @@ NOTE: You can view the latest MPDXiOSLib version either [here](https://github.co
   ![alt text](ReadMeAssets/swift-package-manager/xcode-input-swift-package-mpdx-ios-lib.png) <br><br>
 - Xcode will finish loading, then add package to target.
   ![alt text](ReadMeAssets/swift-package-manager/xcode-add-swift-package-mpdx-ios-lib.png) <br><br>
-
-
-### Install MPDXiOSLib With Cocoapods
-
-- First install the [cocoapods dependency manager](https://cocoapods.org/).
-- Add a Podfile to your project directory.  You can review the MPDXClientExampleCocoapods Podfile for reference on setting that up [here](https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/ExampleProjects/Cocoapods/Podfile).  NOTE that your target name or names(if including tests) will be different than the MPDXClientExampleCocoapods target name.  The main target name will match the Xcode project name.
-- Also note the version might be later than the linked example.  Find the latest available version [here](https://github.com/CruGlobal/mpdx-ios-lib/blob/master/MPDXiOSLib.podspec#L4) or [here](https://github.com/CruGlobal/mpdx-ios-lib/tags).
-- Open the Terminal app to your Xcode project directory and run command pod install.  Once completed you will have a .xcworkspace file which you can now open to configure in the next step.
-
     
 ### Configure Your New Xcode Project
 
 - Now it's time to finish configuring your Xcode project. 
-- The Xcode file to open will depend on the dependency manager used. <br>  
-  - For Swift Package Manager open the .xcodeproj file. <br>
-  - For Cocoapods open the .xcworkspace file (generated from pod install). <br>
+- Open the .xcodeproj file.
 - Configure your Xcode project build target.
   - Delete Mac under Supported Destinations.  Should be iPhone and iPad.
   - Set Minimum Deployments to iOS 14.0.
