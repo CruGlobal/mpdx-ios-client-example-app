@@ -6,6 +6,7 @@ Includes a Swift Package Manager example project to facilitate in the creation o
 - [Steps To Create Templated MPDX iOS App](#steps-to-create-templated-mpdx-ios-app)
 - [Configuring AppConfig](#configuring-appconfig)
 - [Distribution](#distribution)
+- [Migration Guides](#migration-guides)
 
 ### Requirements
 
@@ -187,3 +188,7 @@ Once Fastlane Match is setup, you will need to add the created private repositor
 
 - In your Matchfile, add the giturl with your created private repository git url.
 - In your .env.default set the MATCH_GIT_URL value to your private repository git url.
+
+### Migration Guides
+
+- [MPDXiOSLib 0.10.0 Migration Guide](https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/Documentation/MPDX%20iOS%20Lib%200.10.0%20Migration%20Guide.md)
