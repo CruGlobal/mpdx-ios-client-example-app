@@ -12,5 +12,11 @@ Below are the following steps needed when upgrading to MPDXiOSLib 0.10.0.
 ##### 2) Ensure uses base internationalization is unchecked.
 - Locate Use Base Internationalization and uncheck.
 ![alt text](../ReadMeAssets/migrate-0.10.0/uncheck-use-base-internationalization.png) <br><br>
+- Choose Move when prompted to move to English.
+![alt text](../ReadMeAssets/migrate-0.10.0/move-files-to-english.png) <br><br>
+- Use Base Internationalization should now be unchecked and you should see 1 file localized in English.
+![alt text](../ReadMeAssets/migrate-0.10.0/base-unchecked-files-english.png) <br><br>
+- Your Usage Descriptions should also have English now instead of Base.
+![alt text](../ReadMeAssets/migrate-0.10.0/engish-usage-description.png) <br><br>
 
 ##### 3) Update implementation for AppConfigInterface.
