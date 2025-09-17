@@ -4,15 +4,19 @@ MPDX Client Example App
 Includes a Swift Package Manager example project to facilitate in the creation of your templated MPDX iOS App. Note that these instructions were originally created in Xcode 14.2 and things may change in future versions of Xcode.
 
 - [Steps To Create Templated MPDX iOS App](#steps-to-create-templated-mpdx-ios-app)
+- [Migration Guides](#migration-guides)
 - [Configuring AppConfig](#configuring-appconfig)
 - [Distribution](#distribution)
-- [Migration Guides](#migration-guides)
 
 ### Requirements
 
 - Minimum iOS Target: iOS 14 <br>
 - Dependency Manager: Swift Package Manager <br>
 - MPDXiOSLib: View version [here](https://github.com/CruGlobal/mpdx-ios-lib/tags). <br>
+
+### Migration Guides
+
+- [MPDXiOSLib 0.10.0 Migration Guide](https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/Documentation/MPDX%20iOS%20Lib%200.10.0%20Migration%20Guide.md)
 
 ### Steps To Create Templated MPDX iOS App
 
@@ -188,7 +192,3 @@ Once Fastlane Match is setup, you will need to add the created private repositor
 
 - In your Matchfile, add the giturl with your created private repository git url.
 - In your .env.default set the MATCH_GIT_URL value to your private repository git url.
-
-### Migration Guides
-
-- [MPDXiOSLib 0.10.0 Migration Guide](https://github.com/CruGlobal/mpdx-ios-client-example-app/blob/main/Documentation/MPDX%20iOS%20Lib%200.10.0%20Migration%20Guide.md)
