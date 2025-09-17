@@ -1,5 +1,0 @@
-/* Contacts Access Usage Description */
-"NSContactsUsageDescription" = "This will allow your selected contacts to be imported into MPDX.";
-
-/* Face ID Usage Description */
-"NSFaceIDUsageDescription" = "MPDX uses FaceID to securely unlock your account.";
