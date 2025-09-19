@@ -20,3 +20,8 @@ Below are the following steps needed when upgrading to MPDXiOSLib 0.10.0.
 ![alt text](../ReadMeAssets/migrate-0.10.0/engish-usage-description.png) <br><br>
 
 ##### 3) Update implementation for AppConfigInterface.
+
+- Import RequestOperation.
+- apiBaseUrl: String type changed to apiBaseUrl: ApiBaseUrl.
+- AuthenticationConfiguration init argument label also changed to accessTokenProvider.
+![alt text](../ReadMeAssets/migrate-0.10.0/app-config-changes.png) <br><br>
